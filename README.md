@@ -1,5 +1,7 @@
 # Geyser Placeholders
 [![forthebadge made-with-java](https://ForTheBadge.com/images/badges/made-with-java.svg)](https://java.com/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Automatic Release](https://github.com/ImDaBigBoss/GeyserPlaceholders/actions/workflows/release.yml/badge.svg)](https://github.com/ImDaBigBoss/GeyserPlaceholders/actions/workflows/release.yml)
 
 PlaceholderAPI support for [Geyser](https://github.com/GeyserMC/Geyser)
 
