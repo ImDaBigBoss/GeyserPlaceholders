@@ -12,7 +12,6 @@
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.test.skip>true</maven.test.skip>
     </properties>
 
     <build>
@@ -55,6 +54,26 @@
 
     <repositories>
         <repository>
+            <id>opencollab-repo-release</id>
+            <url>https://repo.opencollab.dev/maven-releases/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>opencollab-repo-snapshot</id>
+            <url>https://repo.opencollab.dev/maven-snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
             <id>spigotmc-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
@@ -62,17 +81,13 @@
             <id>placeholderapi</id>
             <url>http://repo.extendedclip.com/content/repositories/placeholderapi/</url>
         </repository>
-        <repository>
-            <id>opencollab-snapshot</id>
-            <url>https://repo.opencollab.dev/maven-snapshots/</url>
-        </repository>
     </repositories>
 
     <dependencies>
         <dependency>
             <groupId>org.geysermc</groupId>
-            <artifactId>connector</artifactId>
-            <version>1.2.0-SNAPSHOT</version>
+            <artifactId>core</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
